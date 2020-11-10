@@ -130,6 +130,12 @@
             <artifactId>taglibs-standard-spec</artifactId>
             <version>1.2.5</version>
         </dependency>
+        <!--Lombok-->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.16</version>
+        </dependency>
         <!--json转换-->
         <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
