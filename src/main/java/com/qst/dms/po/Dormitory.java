@@ -1,7 +1,15 @@
 package com.qst.dms.po;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
 import java.io.Serializable;
 import java.util.List;
+
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
 
 public class Dormitory implements Serializable {
     private static final long serialVersionUID = 1L;
@@ -18,55 +26,4 @@ public class Dormitory implements Serializable {
         return serialVersionUID;
     }
 
-    public Integer getD_id() {
-        return d_id;
-    }
-
-    public void setD_id(Integer d_id) {
-        this.d_id = d_id;
-    }
-
-    public Integer getS_dormitoryid() {
-        return s_dormitoryid;
-    }
-
-    public void setS_dormitoryid(Integer s_dormitoryid) {
-        this.s_dormitoryid = s_dormitoryid;
-    }
-
-    public String getD_dormbuilding() {return d_dormbuilding;}
-
-    public void setD_dormbuilding(String d_dormbuilding) {this.d_dormbuilding = d_dormbuilding;}
-
-    public String getD_bedtotal() {
-        return d_bedtotal;
-    }
-
-    public void setD_bedtotal(String d_bedtotal) {
-        this.d_bedtotal = d_bedtotal;
-    }
-
-    public String getD_bed() {
-        return d_bed;
-    }
-
-    public void setD_bed(String d_bed) {
-        this.d_bed = d_bed;
-    }
-
-    public String getA_name() {
-        return a_name;
-    }
-
-    public void setA_name(String a_name) {
-        this.a_name = a_name;
-    }
-
-    public List<Student> getStudents() {
-        return students;
-    }
-
-    public void setStudents(List<Student> students) {
-        this.students = students;
-    }
 }
