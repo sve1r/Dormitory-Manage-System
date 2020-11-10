@@ -1,4 +1,4 @@
-# 订单管理系统
+# 学生宿舍管理系统
 ![GitHub contributors](https://img.shields.io/github/contributors/sve1r/Dormitory-Manage-System?style=for-the-badge)
 ![GitHub stars](https://img.shields.io/github/stars/sve1r/Dormitory-Manage-System?color=ffd700&style=for-the-badge)
 ![GitHub forks](https://img.shields.io/github/forks/sve1r/Dormitory-Manage-System?color=60c5ba&style=for-the-badge)
