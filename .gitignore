@@ -1,2 +1,5 @@
 # Project exclude paths
+#排除生成的 target 文件夹
 /target/
+#排除 idea 自带的文件夹
+/.idea
