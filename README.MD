@@ -1,15 +1,18 @@
 # 订单管理系统
-![GitHub contributors](https://img.shields.io/github/contributors/ac-fan/order-manger-system?style=for-the-badge)
-![GitHub stars](https://img.shields.io/github/stars/ac-fan/order-manger-system?color=ffd700&style=for-the-badge)
-![GitHub forks](https://img.shields.io/github/forks/ac-fan/order-manger-system?color=60c5ba&style=for-the-badge)
-![GitHub issues](https://img.shields.io/github/issues/ac-fan/order-manger-system?color=1E90FF&style=for-the-badge)
-![Github Codelines](https://img.shields.io/tokei/lines/github/ac-fan/order-manger-system?style=for-the-badge)
-![GitHub](https://img.shields.io/github/license/ac-fan/order-manger-system?style=for-the-badge)
+![GitHub contributors](https://img.shields.io/github/contributors/sve1r/Dormitory-Manage-System?style=for-the-badge)
+![GitHub stars](https://img.shields.io/github/stars/sve1r/Dormitory-Manage-System?color=ffd700&style=for-the-badge)
+![GitHub forks](https://img.shields.io/github/forks/sve1r/Dormitory-Manage-System?color=60c5ba&style=for-the-badge)
+![GitHub issues](https://img.shields.io/github/issues/sve1r/Dormitory-Manage-System?color=1E90FF&style=for-the-badge)
+![Github Codelines](https://img.shields.io/tokei/lines/github/sve1r/Dormitory-Manage-System?style=for-the-badge)
+![GitHub](https://img.shields.io/github/license/sve1r/Dormitory-Manage-System?style=for-the-badge)
 ---
 ## 主要功能
-* 供应商管理
-* 订单管理
-* 用户管理
+* 学生管理
+* 班级管理
+* 宿舍管理
+* 卫生管理
+* 访客管理
+* 管理员管理
 ```
 //TODO
 ```
@@ -17,9 +20,9 @@
 ---
 ## 开发环境
 - IDE : `JetBrains™ IntelliJ IDEA 2020.2.1`
-- 数据库 : `Oracle™ Mysql 8.0.13`
+- 数据库 : `Oracle™ Mysql 8.0.21`
 - JDK版本 : `Oracle™ Java JDK 1.8`
-- Tomcat版本 : `Apache™ Tomcat 8.x`
+- Tomcat版本 : `Apache™ Tomcat 9.x`
 
 ## 项目整体架构
 ```
