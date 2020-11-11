@@ -15,11 +15,11 @@ import java.util.List;
  **/
 public interface DormCleanService {
     //分页查询
-    public PageInfo<DormClean> findPageInfo(Integer d_id, String d_dormbuilding, Integer pageIndex, Integer pageSize);
+    PageInfo<DormClean> findPageInfo(Integer d_id, String d_dormbuilding, Integer pageIndex, Integer pageSize);
 
-    public int addDormClean(DormClean dormclean);    //添加宿舍信息
-    public int deleteDormClean(Integer g_id);   //删除宿舍信息
-    public int updateDormClean(DormClean dormclean); //修改宿舍信息
-    public DormClean findDormCleanById(Integer g_id);
-    public List<DormClean> getAll();
+    int addDormClean(DormClean dormclean);    //添加宿舍信息
+    int deleteDormClean(Integer g_id);   //删除宿舍信息
+    int updateDormClean(DormClean dormclean); //修改宿舍信息
+    DormClean findDormCleanById(Integer g_id);
+    List<DormClean> getAll();
 }

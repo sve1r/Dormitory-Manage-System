@@ -12,7 +12,7 @@ public class PageInfo<T> implements Serializable {
     private Integer totalCount =0; //总条数
     private Integer pageTotalCount =0; //总页数
     //每页显示的数据集合
-    private List<T> list = new ArrayList<T>();
+    private List<T> list = new ArrayList<>();
 
     public Integer getPageIndex() {
         return pageIndex;

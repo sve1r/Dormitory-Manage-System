@@ -15,16 +15,16 @@ public interface DormitoryDao {
 	 */
 
 	 //获取总条数
-     public Integer totalCount(@Param("a_name") String a_name, @Param("s_dormitoryid") Integer s_dormitoryid,@Param("d_dormbuilding") String d_dormbuilding);
+	Integer totalCount(@Param("a_name") String a_name, @Param("s_dormitoryid") Integer s_dormitoryid, @Param("d_dormbuilding") String d_dormbuilding);
 	 //获取用户列表
-     public List<Dormitory> getDormitoryList(@Param("a_name") String a_name, @Param("s_dormitoryid") Integer s_dormitoryid, @Param("d_dormbuilding") String d_dormbuilding, @Param("currentPage") Integer currentPage, @Param("pageSize") Integer pageSize);
+	 List<Dormitory> getDormitoryList(@Param("a_name") String a_name, @Param("s_dormitoryid") Integer s_dormitoryid, @Param("d_dormbuilding") String d_dormbuilding, @Param("currentPage") Integer currentPage, @Param("pageSize") Integer pageSize);
 
-	public int addDormitory(Dormitory dormitory);    //添加宿舍信息
-	public int deleteDormitory(Integer d_id);   //删除宿舍信息
-	public int updateDormitory(Dormitory dormitory); //修改宿舍信息
-	public Dormitory findDormitoryById(Integer d_id);
+	int addDormitory(Dormitory dormitory);    //添加宿舍信息
+	int deleteDormitory(Integer d_id);   //删除宿舍信息
+	int updateDormitory(Dormitory dormitory); //修改宿舍信息
+	Dormitory findDormitoryById(Integer d_id);
 
-    public List<Dormitory> findDormitoryStudent(Integer s_dormitoryid);//查询宿舍人员信息
-	public List<Dormitory> getAll();
+    List<Dormitory> findDormitoryStudent(Integer s_dormitoryid);//查询宿舍人员信息
+	List<Dormitory> getAll();
 
 }

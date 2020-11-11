@@ -13,14 +13,14 @@ import java.util.List;
 public interface DormitoryService {
 
 	//分页查询
-	public PageInfo<Dormitory> findPageInfo(String a_name, Integer s_dormitoryid, String d_dormbuilding, Integer pageIndex, Integer pageSize);
+    PageInfo<Dormitory> findPageInfo(String a_name, Integer s_dormitoryid, String d_dormbuilding, Integer pageIndex, Integer pageSize);
 
-	public int addDormitory(Dormitory dormitory);    //添加宿舍信息
-	public int deleteDormitory(Integer d_id);   //删除宿舍信息
-	public int updateDormitory(Dormitory dormitory); //修改宿舍信息
-	public Dormitory findDormitoryById(Integer d_id);
+	int addDormitory(Dormitory dormitory);    //添加宿舍信息
+	int deleteDormitory(Integer d_id);   //删除宿舍信息
+	int updateDormitory(Dormitory dormitory); //修改宿舍信息
+	Dormitory findDormitoryById(Integer d_id);
 
-    public List<Dormitory> findDormitoryStudent(Integer s_dormitoryid);//查询宿舍人员信息
-	public List<Dormitory> getAll();
+    List<Dormitory> findDormitoryStudent(Integer s_dormitoryid);//查询宿舍人员信息
+	List<Dormitory> getAll();
 
 }

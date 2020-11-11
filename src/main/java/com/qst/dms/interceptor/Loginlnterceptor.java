@@ -10,7 +10,11 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 /**
- * 登录拦截器
+ * Class Loginlnterceptor
+ *
+ * @author sve1r
+ * @description 登录拦截器
+ * @date 2020/11/11
  */
 public class Loginlnterceptor implements HandlerInterceptor {
     @Override
@@ -19,7 +23,7 @@ public class Loginlnterceptor implements HandlerInterceptor {
         // 获取请求的URL
         String url = request.getRequestURI();
         // URL:除了login.jsp是可以公开访问的，其它的URL都进行拦截控制
-        if (url.indexOf("/login") >= 0) {
+        if (url.contains("/login")) {
             return true;
         }
         // 获取Session

@@ -28,7 +28,7 @@ public class StudentCleanServiceImpl implements StudentCleanService {
     //分页查询
     @Override
     public PageInfo<StudentClean> findPageInfo(Integer s_studentid, String s_name, Integer s_dormitoryid, Integer pageIndex, Integer pageSize) {
-        PageInfo<StudentClean> pi = new PageInfo<StudentClean>();
+        PageInfo<StudentClean> pi = new PageInfo<>();
         pi.setPageIndex(pageIndex);
         pi.setPageSize(pageSize);
         //获取总条数

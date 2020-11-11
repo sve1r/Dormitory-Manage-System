@@ -27,7 +27,7 @@ public class StudentServiceImpl implements StudentService {
 	@Override
 	public PageInfo<Student> findPageInfo(String s_name, Integer s_studentid, Integer s_classid,
 										  String s_classname, Integer pageIndex, Integer pageSize) {
-		PageInfo<Student> pi = new PageInfo<Student>();
+		PageInfo<Student> pi = new PageInfo<>();
 		pi.setPageIndex(pageIndex);
 		pi.setPageSize(pageSize);
 		//获取总条数
