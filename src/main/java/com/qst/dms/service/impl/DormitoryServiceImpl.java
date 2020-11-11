@@ -73,8 +73,8 @@ public class DormitoryServiceImpl implements DormitoryService {
 	}
 	//查询宿舍人员信息
 	@Override
-	public List<Dormitory> findDormitoryStudent(Dormitory dormitory) {
-		List<Dormitory> d = dormitoryDao.findDormitoryStudent(dormitory);
+    public List<Dormitory> findDormitoryStudent(Integer s_dormitoryid) {
+        List<Dormitory> d = dormitoryDao.findDormitoryStudent(s_dormitoryid);
 		return d;
 	}
 

@@ -90,11 +90,16 @@ public class ClassController {
 	 * 班级人员信息查询
 	 */
 	@RequestMapping(value = "/findClassStudent")
-	public String findClassStudent(Class uclass,Model model) {
-		List<Class> c = classService.findClassStudent(uclass);
+    public String findClassStudent(Integer c_classid, String c_classname, Model model) {
+        List<Class> c = classService.findClassStudent(c_classid, c_classname);
 		model.addAttribute("cs",c);
 		return "class_Studentlist";
 	}
+
+
+    /**
+     * 班级人员全部信息查询
+     */
 
 	//采用Ajax来提交表单，并返回JSON数据
 //	@RequestMapping(value = "/findClassStudentlist",method = RequestMethod.POST)

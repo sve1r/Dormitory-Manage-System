@@ -72,8 +72,8 @@ public class ClassServiceImpl implements ClassService {
 
 	//查询宿舍人员信息
 	@Override
-	public List<Class> findClassStudent(Class uclass) {
-		List<Class> c = classDao.findClassStudent(uclass);
+    public List<Class> findClassStudent(Integer c_classid, String c_classname) {
+        List<Class> c = classDao.findClassStudent(c_classid, c_classname);
 		return c;
 	}
 }

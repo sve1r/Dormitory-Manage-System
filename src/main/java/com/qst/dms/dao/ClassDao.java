@@ -21,6 +21,7 @@ public interface ClassDao {
 	public int addClass(Class ucalss);    //添加班级信息
 	public int updateClass(Class uclass); //修改班级信息
 	public Class findClassById(Integer c_id);
-	public List<Class> findClassStudent(Class uclass);//查询班级人员信息
+
+    public List<Class> findClassStudent(@Param("c_classid") Integer c_classid, @Param("c_classname") String c_classname);//查询班级人员信息
 	public List<Class> getAll();
 }

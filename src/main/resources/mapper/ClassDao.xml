@@ -108,10 +108,17 @@
                student.s_dormitoryid as s_dormitoryid
         FROM d_class uclass
                  join d_student student
-                      on uclass.c_classid = student.s_classid
-                          and uclass.c_classname = student.s_classname
-        where uclass.c_classid = #{c_classid}
-          and uclass.c_classname = #{c_classname}
+        on uclass.c_classid = student.s_classid
+        and uclass.c_classname = student.s_classname
+        <where>
+            <if test="c_classid!=null and c_classid!=0 ">
+                and c_classid =#{c_classid}
+            </if>
+            <if test="c_classname!=null and c_classname!=''">
+                or c_classname = #{c_classname}
+            </if>
+
+        </where>
     </select>
 
     <select id="getAll" resultType="Class">

@@ -18,6 +18,7 @@ public interface ClassService {
 	public int addClass(Class ucalss);    //添加班级信息
 	public Class findClassById(Integer c_id);
 	public int updateClass(Class uclass); //修改班级信息
-	public List<Class> findClassStudent(Class uclass);//查询班级人员信息
+
+    public List<Class> findClassStudent(Integer c_classid, String c_classname);//查询班级人员信息
 	public List<Class> getAll();
 }

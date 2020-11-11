@@ -93,8 +93,8 @@ public class DormitoryController {
 	 * 宿舍人员信息查询
 	 */
 	@RequestMapping(value = "/findDormitoryStudent")
-	public String findDormitoryStudent(Dormitory dormitory,Model model) {
-		List<Dormitory> d = dormitoryService.findDormitoryStudent(dormitory);
+    public String findDormitoryStudent(Integer s_dormitoryid, Model model) {
+        List<Dormitory> d = dormitoryService.findDormitoryStudent(s_dormitoryid);
 		model.addAttribute("ds",d);
 		return "dormitory_Studentlist";
 	}

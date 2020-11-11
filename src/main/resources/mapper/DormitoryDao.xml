@@ -104,7 +104,12 @@
         FROM d_dormitoryinfo dormitoryinfos
                  join d_student students
                       on dormitoryinfos.s_dormitoryid = students.s_dormitoryid
-        where dormitoryinfos.s_dormitoryid = #{s_dormitoryid}
+        <where>
+            <if test="s_dormitoryid !=null and s_dormitoryid !=''">
+                and dormitoryinfos.s_dormitoryid = #{s_dormitoryid}
+            </if>
+
+        </where>
     </select>
 
     <select id="getAll" resultType="Dormitory">

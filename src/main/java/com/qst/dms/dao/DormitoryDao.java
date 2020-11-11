@@ -24,7 +24,7 @@ public interface DormitoryDao {
 	public int updateDormitory(Dormitory dormitory); //修改宿舍信息
 	public Dormitory findDormitoryById(Integer d_id);
 
-	public List<Dormitory> findDormitoryStudent(Dormitory dormitory);//查询宿舍人员信息
+    public List<Dormitory> findDormitoryStudent(Integer s_dormitoryid);//查询宿舍人员信息
 	public List<Dormitory> getAll();
 
 }
