@@ -1,6 +1,6 @@
 package com.qst.dms.controller;
 
-
+import com.qst.dms.po.Class;
 import com.qst.dms.po.PageInfo;
 import com.qst.dms.service.ClassService;
 import org.springframework.beans.factory.annotation.Autowired;

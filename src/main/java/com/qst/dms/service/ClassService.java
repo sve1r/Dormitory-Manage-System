@@ -1,7 +1,7 @@
 package com.qst.dms.service;
 
 
-
+import com.qst.dms.po.Class;
 import com.qst.dms.po.PageInfo;
 
 import java.util.List;
@@ -15,7 +15,8 @@ public interface ClassService {
     PageInfo<Class> findPageInfo(String c_classname, String c_counsellor, Integer c_classid, Integer pageIndex, Integer pageSize);
 
 	int deleteClass(Integer c_id);   //删除班级信息
-	int addClass(Class ucalss);    //添加班级信息
+
+    int addClass(Class uclass);    //添加班级信息
 	Class findClassById(Integer c_id);
 	int updateClass(Class uclass); //修改班级信息
 

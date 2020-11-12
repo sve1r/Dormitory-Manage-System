@@ -1,5 +1,6 @@
 package com.qst.dms.dao;
 
+import com.qst.dms.po.Class;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
