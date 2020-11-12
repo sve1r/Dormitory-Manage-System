@@ -34,9 +34,8 @@ public class StudentCleanController {
      */
     @RequestMapping(value = "/findStudentClean")
     public String findDormClean(Integer s_studentid, String s_name, Integer s_dormitoryid, Integer pageIndex, Integer pageSize, Model model) {
-
-        PageInfo<StudentClean> di = studentCleanService.findPageInfo(s_studentid,s_name,s_dormitoryid,pageIndex,pageSize);
-        model.addAttribute("di",di);
+        PageInfo<StudentClean> di = studentCleanService.findPageInfo(s_studentid, s_name, s_dormitoryid, pageIndex, pageSize);
+        model.addAttribute("di", di);
         return "studentclean_list";
     }
 
@@ -45,16 +44,16 @@ public class StudentCleanController {
      */
     @RequestMapping(value = "/exportstudentcleanlist", method = RequestMethod.POST)
     @ResponseBody
-    public List<StudentClean> exportStudentclean(){
+    public List<StudentClean> exportStudentclean() {
         return studentCleanService.getAll();
     }
 
     /**
      * 添加宿舍卫生信息
      */
-    @RequestMapping(value = "/addStudentClean" ,method = RequestMethod.POST)
+    @RequestMapping(value = "/addStudentClean", method = RequestMethod.POST)
     @ResponseBody
-    public String addDormClean( @RequestBody StudentClean studentclean) {
+    public String addDormClean(@RequestBody StudentClean studentclean) {
         int d = studentCleanService.addStudentClean(studentclean);
         return "studentclean_list";
     }
@@ -62,7 +61,7 @@ public class StudentCleanController {
     /**
      * 删除宿舍卫生信息
      */
-    @RequestMapping( "/deleteStudentClean")
+    @RequestMapping("/deleteStudentClean")
     @ResponseBody
     public String deleteDormClean(Integer g_id) {
         int d = studentCleanService.deleteStudentClean(g_id);
@@ -72,18 +71,17 @@ public class StudentCleanController {
     /**
      * 修改宿舍卫生信息
      */
-    @RequestMapping( "/updateStudentClean")
-    public String updateDormClean( StudentClean studentclean) {
+    @RequestMapping("/updateStudentClean")
+    public String updateDormClean(StudentClean studentclean) {
         int d = studentCleanService.updateStudentClean(studentclean);
         return "redirect:/findStudentClean";
     }
 
 
-    @RequestMapping( "/findStudentCleanById")
+    @RequestMapping("/findStudentCleanById")
     public String findDormCleanById(Integer g_id, HttpSession session) {
-
-        StudentClean d= studentCleanService.findStudentCleanById(g_id);
-        session.setAttribute("d",d);
+        StudentClean d = studentCleanService.findStudentCleanById(g_id);
+        session.setAttribute("d", d);
         return "studentclean_edit";
     }
 }

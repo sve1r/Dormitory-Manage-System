@@ -257,12 +257,12 @@
             form.on('submit(formDemo)', function(data) {
                 // layer.msg('aaa',{icon:1,time:3000});
                 var param=data.field;
-                // console.log(JSON.stringify(param));
+                console.log(JSON.stringify(param));
                 $.ajax({
                     url: '/addAdmin',
-                    type: "post",
+                    type: "POST",
                     data:JSON.stringify(param),
-                    contentType: "application/json; charset=utf-8",
+                    //contentType: "application/json; charset=utf-8",
                     success:function(da){
                         console.log(da);
                         layer.msg('添加成功', {icon: 1, time: 2000});
