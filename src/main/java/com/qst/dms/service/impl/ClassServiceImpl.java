@@ -43,8 +43,7 @@ public class ClassServiceImpl implements ClassService {
 
 	@Override
 	public List<Class> getAll(){
-		List<Class> classList = classDao.getAll();
-		return  classList;
+		return classDao.getAll();
 	}
 
 	//通过id删除班级信息
@@ -61,8 +60,7 @@ public class ClassServiceImpl implements ClassService {
 
 	@Override
 	public Class findClassById (Integer c_id){
-		Class c = classDao.findClassById(c_id);
-		return  c;
+		return classDao.findClassById(c_id);
 	}
 	//修改班级信息
 	@Override
@@ -73,7 +71,6 @@ public class ClassServiceImpl implements ClassService {
 	//查询宿舍人员信息
 	@Override
     public List<Class> findClassStudent(Integer c_classid, String c_classname) {
-        List<Class> c = classDao.findClassStudent(c_classid, c_classname);
-		return c;
+		return classDao.findClassStudent(c_classid, c_classname);
 	}
 }

@@ -46,8 +46,7 @@ public class VisitorServiceImpl implements VisitorService {
 
     @Override
     public List<Visitor> getAll(){
-        List<Visitor> visitorList = visitorDao.getAll();
-        return visitorList;
+        return visitorDao.getAll();
     }
 
     //添加学生信息

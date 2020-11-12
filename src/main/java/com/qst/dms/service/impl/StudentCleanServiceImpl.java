@@ -46,8 +46,7 @@ public class StudentCleanServiceImpl implements StudentCleanService {
 
     @Override
     public List<StudentClean> getAll(){
-        List<StudentClean> studentCleanList = studentCleanDao.getAll();
-        return studentCleanList;
+        return studentCleanDao.getAll();
     }
 
     //添加宿舍卫生信息
@@ -70,8 +69,7 @@ public class StudentCleanServiceImpl implements StudentCleanService {
 
     @Override
     public StudentClean findStudentCleanById (Integer g_id){
-        StudentClean d = studentCleanDao.findStudentCleanById(g_id);
-        return  d;
+        return studentCleanDao.findStudentCleanById(g_id);
     }
 
 }

@@ -12,68 +12,111 @@ import org.springframework.transaction.annotation.Transactional;
 import java.util.List;
 
 /**
- * 用户Service接口实现类
+ * Class AdminServiceImpl
+ *
+ * @author sve1r
+ * @description 用户Service接口实现类
+ * @date 2020/11/11
  */
 @Service("adminService")
 @Transactional
 public class AdminServiceImpl implements AdminService {
-	// 注入UserDao
-	@Autowired
-	private AdminDao adminDao;
+    /**
+     * 自动注入 adminDao
+     */
+    @Autowired
+    private AdminDao adminDao;
 
-	//管理登陆查询
-	@Override
-	public Admin findAdmin(Admin admin) {
-		Admin a = adminDao.findAdmin(admin);
-		return a;
-	}
-
-	@Override
-	public List<Admin> getAll(){
-
-		List<Admin> adminList = adminDao.getAll();
-		return adminList;
+    /**
+     * 管理登陆查询
+     *
+     * @param admin 管理员对象
+     * @return dao 层查询结果
+     */
+    @Override
+    public Admin findAdmin(Admin admin) {
+        return adminDao.findAdmin(admin);
     }
 
-	@Override
-	public PageInfo<Admin> findPageInfo(String a_username, String a_describe, Integer a_id, Integer pageIndex, Integer pageSize) {
-		PageInfo<Admin> pi = new PageInfo<>();
-		pi.setPageIndex(pageIndex);
-		pi.setPageSize(pageSize);
-		//获取总条数
-		Integer totalCount = adminDao.totalCount(a_username,a_describe,a_id);
-		if (totalCount>0){
-			pi.setTotalCount(totalCount);
-			//每一页显示管理员信息数
-			//currentPage = (pageIndex-1)*pageSize  当前页码数减1*最大条数=开始行数
-			List<Admin> adminList =	adminDao.getAdminList(a_username,a_describe,a_id,
-					(pi.getPageIndex()-1)*pi.getPageSize(),pi.getPageSize());
-			pi.setList(adminList);
-		}
-		return pi;
-	}
+    /**
+     * 所有管理员对象结果
+     *
+     * @return 返回 dao 层查询结果
+     */
+    @Override
+    public List<Admin> getAll() {
+        return adminDao.getAll();
+    }
 
-	//添加管理员信息
-	@Override
-	public int addAdmin(Admin admin) {
-		return adminDao.addAdmin(admin);
-	}
+    /**
+     * 分页查询 管理员
+     *
+     * @param a_username 管理员用户名
+     * @param a_describe 管理员描述
+     * @param a_id       管理员 id
+     * @param pageIndex  页数
+     * @param pageSize   页面总数
+     * @return
+     */
+    @Override
+    public PageInfo<Admin> findPageInfo(String a_username, String a_describe, Integer a_id, Integer pageIndex, Integer pageSize) {
+        PageInfo<Admin> pi = new PageInfo<>();
+        pi.setPageIndex(pageIndex);
+        pi.setPageSize(pageSize);
+        //获取总条数
+        Integer totalCount = adminDao.totalCount(a_username, a_describe, a_id);
+        if (totalCount > 0) {
+            pi.setTotalCount(totalCount);
+            //每一页显示管理员信息数
+            //currentPage = (pageIndex-1)*pageSize  当前页码数减1*最大条数=开始行数
+            List<Admin> adminList = adminDao.getAdminList(a_username, a_describe, a_id,
+                    (pi.getPageIndex() - 1) * pi.getPageSize(), pi.getPageSize());
+            pi.setList(adminList);
+        }
+        return pi;
+    }
 
-	//通过id删除管理员信息
-	@Override
-	public int deleteAdmin(Integer a_id) {
-		return adminDao.deleteAdmin(a_id);
-	}
+    /**
+     * 添加管理员信息
+     *
+     * @param admin 管理员对象
+     * @return
+     */
+    @Override
+    public int addAdmin(Admin admin) {
+        return adminDao.addAdmin(admin);
+    }
 
-	//修改管理员信息
-	@Override
-	public int updateAdmin(Admin admin) {
-		return adminDao.updateAdmin(admin);
-	}
+    /**
+     * 通过id删除管理员信息
+     *
+     * @param a_id 管理员 id
+     * @return dao 层执行结果
+     */
+    @Override
+    public int deleteAdmin(Integer a_id) {
+        return adminDao.deleteAdmin(a_id);
+    }
 
-	@Override
-	public Admin findAdminById (Integer a_id){
-		Admin a = adminDao.findAdminById(a_id);
-		return  a;
-	}
+    /**
+     * 修改管理员信息
+     *
+     * @param admin 管理员对象
+     * @return dao 层执行结果
+     */
+    @Override
+    public int updateAdmin(Admin admin) {
+        return adminDao.updateAdmin(admin);
+    }
+
+    /**
+     * 根据 id 查询管理员
+     *
+     * @param a_id 管理员 id
+     * @return dao 层执行结果
+     */
+    @Override
+    public Admin findAdminById(Integer a_id) {
+        return adminDao.findAdminById(a_id);
+    }
 }

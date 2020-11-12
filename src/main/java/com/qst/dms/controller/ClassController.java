@@ -59,8 +59,7 @@ public class ClassController {
     @RequestMapping(value = "/exportclasslist", method = RequestMethod.POST)
     @ResponseBody
     public List<Class> exportClass() {
-        List<Class> classList = classService.getAll();
-        return classList;
+        return classService.getAll();
     }
 
     /**

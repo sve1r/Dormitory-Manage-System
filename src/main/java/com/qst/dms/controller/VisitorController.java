@@ -47,8 +47,7 @@ public class VisitorController {
     @RequestMapping(value = "/exportvisitorlist", method = RequestMethod.POST)
     @ResponseBody
     public List<Visitor> exportVisitor(){
-        List<Visitor> visitorList = visitorService.getAll();
-        return visitorList;
+        return visitorService.getAll();
     }
 
     /**

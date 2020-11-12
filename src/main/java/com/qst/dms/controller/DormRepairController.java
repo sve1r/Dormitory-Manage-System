@@ -48,8 +48,7 @@ public class DormRepairController {
     @RequestMapping(value = "/exportdormrepairlist", method = RequestMethod.POST)
     @ResponseBody
     public List<DormRepair> exportDormrepair(){
-        List<DormRepair> dormRepairList = dormRepairService.getAll();
-        return dormRepairList;
+        return dormRepairService.getAll();
     }
 
 

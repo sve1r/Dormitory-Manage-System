@@ -97,8 +97,7 @@ public class AdminController {
     @RequestMapping(value = "/exportadminlist", method = RequestMethod.POST)
     @ResponseBody
     public List<Admin> exportAdmin() {
-        List<Admin> admin = adminService.getAll();
-        return admin;
+        return adminService.getAll();
     }
 
     /**

@@ -46,8 +46,7 @@ public class StudentCleanController {
     @RequestMapping(value = "/exportstudentcleanlist", method = RequestMethod.POST)
     @ResponseBody
     public List<StudentClean> exportStudentclean(){
-        List<StudentClean> studentCleanList = studentCleanService.getAll();
-        return studentCleanList;
+        return studentCleanService.getAll();
     }
 
     /**

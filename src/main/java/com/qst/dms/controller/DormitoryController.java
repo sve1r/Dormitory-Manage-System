@@ -47,8 +47,7 @@ public class DormitoryController {
 	@RequestMapping(value = "/exportdormitorylist", method = RequestMethod.POST)
 	@ResponseBody
 	public List<Dormitory> exportDormitory(){
-		List<Dormitory> dormitoryList = dormitoryService.getAll();
-		return dormitoryList;
+		return dormitoryService.getAll();
 	}
 
 	/**

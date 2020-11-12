@@ -44,8 +44,7 @@ public class DormitoryServiceImpl implements DormitoryService {
 
 	@Override
 	public List<Dormitory> getAll(){
-		List<Dormitory> dormitoryList = dormitoryDao.getAll();
-		return dormitoryList;
+        return dormitoryDao.getAll();
 	}
 
 	//添加宿舍信息
@@ -68,14 +67,12 @@ public class DormitoryServiceImpl implements DormitoryService {
 
 	@Override
 	public Dormitory findDormitoryById (Integer d_id){
-		Dormitory d = dormitoryDao.findDormitoryById(d_id);
-		return  d;
+        return dormitoryDao.findDormitoryById(d_id);
 	}
 	//查询宿舍人员信息
 	@Override
     public List<Dormitory> findDormitoryStudent(Integer s_dormitoryid) {
-        List<Dormitory> d = dormitoryDao.findDormitoryStudent(s_dormitoryid);
-		return d;
+        return dormitoryDao.findDormitoryStudent(s_dormitoryid);
 	}
 
 

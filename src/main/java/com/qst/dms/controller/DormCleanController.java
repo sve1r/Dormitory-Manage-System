@@ -49,8 +49,7 @@ public class DormCleanController {
     @RequestMapping(value = "/exportdormcleanlist", method = RequestMethod.POST)
     @ResponseBody
     public List<DormClean> exportDormclean(){
-        List<DormClean> dormclean = dormCleanService.getAll();
-        return dormclean;
+        return dormCleanService.getAll();
     }
 
     /**

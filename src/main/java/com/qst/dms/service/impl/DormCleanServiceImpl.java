@@ -46,8 +46,7 @@ public class DormCleanServiceImpl implements DormCleanService {
 
     @Override
     public List<DormClean> getAll(){
-        List<DormClean> dormCleanList = dormCleanDao.getAll();
-        return dormCleanList;
+        return dormCleanDao.getAll();
     }
 
     //添加宿舍卫生信息
@@ -70,8 +69,7 @@ public class DormCleanServiceImpl implements DormCleanService {
 
     @Override
     public DormClean findDormCleanById (Integer g_id){
-        DormClean d = dormCleanDao.findDormCleanById(g_id);
-        return  d;
+        return dormCleanDao.findDormCleanById(g_id);
     }
 
 }

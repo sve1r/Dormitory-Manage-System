@@ -45,8 +45,7 @@ public class StudentServiceImpl implements StudentService {
 
 	@Override
 	public List<Student> getAll(){
-		List<Student> studentList = studentDao.getAll();
-		return studentList;
+        return studentDao.getAll();
 	}
 
 	//通过id删除学生信息
@@ -65,8 +64,7 @@ public class StudentServiceImpl implements StudentService {
 
 	@Override
 	public Student findStudentById (Integer s_id){
-		Student s = studentDao.findStudentById(s_id);
-         return  s;
+        return studentDao.findStudentById(s_id);
 	}
 
 

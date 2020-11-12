@@ -45,8 +45,7 @@ public class StudentController {
 	@RequestMapping(value = "/exportstudentlist", method = RequestMethod.POST)
 	@ResponseBody
 	public List<Student> exportStudent(){
-		List<Student> studentList = studentService.getAll();
-		return studentList;
+        return studentService.getAll();
 	}
 
 	/**
