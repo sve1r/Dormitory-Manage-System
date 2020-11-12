@@ -3,16 +3,16 @@ package com.qst.dms.util;
 import java.security.MessageDigest;
 
 /**
- * @program: Student_dorm_System
- * @description: MD5加密
- * @author: Joyrocky
- * @create: 2019-04-13 13:04
+ * @program:
+ * @description:
+ * @author:
+ * @create:
  **/
 
 
 public class MD5Util {
-
-    private static String byteArrayToHexString(byte[] b) {
+    //这里主要是遍历8个byte，转化为16位进制的字符，即0-F
+    private static String byteArrayToHexString(byte b[]) {
         StringBuilder resultSb = new StringBuilder();
         for (byte value : b) {
             resultSb.append(byteToHexString(value));
@@ -21,6 +21,7 @@ public class MD5Util {
         return resultSb.toString();
     }
 
+    //这里是针对单个byte，256的byte通过16拆分为d1和d2
     private static String byteToHexString(byte b) {
         int n = b;
         if (n < 0) {

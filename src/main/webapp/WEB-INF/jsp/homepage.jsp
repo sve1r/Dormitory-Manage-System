@@ -53,7 +53,9 @@
     <%--</ul>--%>
     <ul class="layui-nav right" lay-filter="">
         <li class="layui-nav-item">
-            <a href="javascript:;"><img src="http://www.fjmingfeng.com/img/0/0341109851/62/999c74b18cf5238b248c3f043bc19ef7/9266008423/574547927.jpg" class="layui-nav-img">${sessionScope.ad.a_username}</a>
+            <a href="javascript:;"><img
+                    src="https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=4157419355,3305616674&fm=16&gp=0.jpg"
+                    class="layui-nav-img">${sessionScope.ad.a_username}</a>
             <dl class="layui-nav-child"> <!-- 二级菜单 -->
                 <dd><a onclick="x_admin_show('切换帐号','loginOut')">切换帐号</a></dd>
                 <dd><a href="/loginOut">退出</a></dd>

@@ -22,7 +22,8 @@
 	<mvc:resources location="/lib/" mapping="/lib/**"/>
 	<mvc:resources location="/layui_exts/" mapping="/layui_exts/**"/>
 
-	<!-- 配置视图解析器 -->
+
+    <!-- 配置视图解析器 -->
 	<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
 		<property name="prefix" value="/WEB-INF/jsp/" />
 		<property name="suffix" value=".jsp" />
