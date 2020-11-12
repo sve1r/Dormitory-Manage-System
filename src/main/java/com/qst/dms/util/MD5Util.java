@@ -12,7 +12,7 @@ import java.security.MessageDigest;
 
 public class MD5Util {
 
-    private static String byteArrayToHexString(byte b[]) {
+    private static String byteArrayToHexString(byte[] b) {
         StringBuilder resultSb = new StringBuilder();
         for (byte value : b) {
             resultSb.append(byteToHexString(value));
