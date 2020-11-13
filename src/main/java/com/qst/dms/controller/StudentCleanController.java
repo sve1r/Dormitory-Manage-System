@@ -36,6 +36,9 @@ public class StudentCleanController {
     public String findDormClean(Integer s_studentid, String s_name, Integer s_dormitoryid, Integer pageIndex, Integer pageSize, Model model) {
         PageInfo<StudentClean> di = studentCleanService.findPageInfo(s_studentid, s_name, s_dormitoryid, pageIndex, pageSize);
         model.addAttribute("di", di);
+        model.addAttribute("s_studentid", s_studentid);
+        model.addAttribute("s_name", s_name);
+        model.addAttribute("s_dormitoryid", s_dormitoryid);
         return "studentclean_list";
     }
 

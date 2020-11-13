@@ -48,9 +48,9 @@
 <div class="x-body">
     <div class="layui-row">
         <form class="layui-form layui-col-md12 x-so" action="/findStudentClean" >
-            <input class="layui-input" placeholder="请输入学号" name="s_studentid" id="s_studentid">
-            <input class="layui-input" placeholder="请输入姓名" name="s_name" id="s_name">
-            <input class="layui-input" placeholder="请输入寝室编号" name="s_dormitoryid" id="s_dormitoryid">
+            <input class="layui-input" placeholder="请输入学号" name="s_studentid" id="s_studentid" value="${s_studentid}">
+            <input class="layui-input" placeholder="请输入姓名" name="s_name" id="s_name" value="${s_name}">
+            <input class="layui-input" placeholder="请输入寝室编号" name="s_dormitoryid" id="s_dormitoryid" value="${s_dormitoryid}">
 
             <input class="layui-input" type="hidden" name="pageIndex" value="1">
             <input class="layui-input" type="hidden" name="pageSize" value="3">

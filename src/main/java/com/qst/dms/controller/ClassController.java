@@ -48,6 +48,9 @@ public class ClassController {
                 c_classid, pageIndex, pageSize);
         model.addAttribute("ci", ci);
         model.addAttribute("c_classid", c_classid);
+        model.addAttribute("c_classname", c_classname);
+        model.addAttribute("c_counsellor", c_counsellor);
+
         return "class_list";
     }
 
@@ -119,6 +122,9 @@ public class ClassController {
     public String findClassStudent(Integer c_classid, String c_classname, Model model) {
         List<Class> c = classService.findClassStudent(c_classid, c_classname);
         model.addAttribute("cs", c);
+        model.addAttribute("c_classid", c_classid);
+        model.addAttribute("c_classname", c_classname);
+
         return "class_Studentlist";
     }
 

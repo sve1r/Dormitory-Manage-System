@@ -41,7 +41,7 @@
         <a href="">首页</a>
         <a href="/findVisitor">访客信息</a>
       </span>
-        <a class="layui-btn layui-btn-small" style="line-height:1.6em;margin-top:3px;float:right" href="/findVisitor" title="刷新">
+    <a class="layui-btn layui-btn-small" style="line-height:1.6em;margin-top:3px;float:right" href="/findVisitor" title="刷新">
         <i class="layui-icon" style="line-height:30px">ဂ</i></a>
 </div>
 <div class="x-body">
@@ -134,14 +134,14 @@
         </tbody>
     </table>
 
-
+    <div class="" >
         <input type="hidden" id="totalPageCount" value="${pi.pageTotalCount}"/>
         <c:import url="pageBtn.jsp">
             <c:param name="totalCount" value="${pi.totalCount}"/>
             <c:param name="currentPageNo" value="${pi.pageIndex}"/>
             <c:param name="totalPageCount" value="${pi.pageTotalCount}"/>
         </c:import>
-
+    </div>
 </div>
 <script>
 

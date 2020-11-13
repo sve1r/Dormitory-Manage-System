@@ -46,8 +46,8 @@
 <div class="x-body">
     <div class="layui-row">
         <form class="layui-form layui-col-md12 x-so" action="/findClassStudent" >
-            <input class="layui-input" placeholder="请输入班级编号" name="c_classid" id="c_classid">
-            <input class="layui-input" placeholder="请输入班级名" name="c_classname" id="c_classname">
+            <input class="layui-input" placeholder="请输入班级编号" name="c_classid" id="c_classid" value="${c_classid}">
+            <input class="layui-input" placeholder="请输入班级名" name="c_classname" id="c_classname" value="${c_classname}">
 
             <button class="layui-btn" lay-submit lay-filter="search"><i class="layui-icon">&#xe615;</i></button>
         </form>

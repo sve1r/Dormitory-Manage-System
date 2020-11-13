@@ -39,6 +39,8 @@ public class DormRepairController {
         PageInfo<DormRepair> di = dormRepairService.findPageInfo(d_id,d_dormbuilding,
                                                     pageIndex,pageSize);
         model.addAttribute("di",di);
+        model.addAttribute("d_id",d_id);
+        model.addAttribute("d_dormbuilding",d_dormbuilding);
         return "dormrepair_list";
     }
 

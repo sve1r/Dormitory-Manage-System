@@ -36,6 +36,9 @@ public class StudentController {
                 s_classname, pageIndex, pageSize);
         model.addAttribute("pi", pi);
         model.addAttribute("s_name", s_name);
+        model.addAttribute("s_studentid", s_studentid);
+        model.addAttribute("s_classid", s_classid);
+        model.addAttribute("s_classname", s_classname);
         return "student_list";
     }
 

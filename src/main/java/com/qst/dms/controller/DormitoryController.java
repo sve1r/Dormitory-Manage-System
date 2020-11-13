@@ -38,6 +38,9 @@ public class DormitoryController {
 	  PageInfo<Dormitory> di = dormitoryService.findPageInfo(a_name,s_dormitoryid,
 			  d_dormbuilding,pageIndex,pageSize);
 	  model.addAttribute("di",di);
+	  model.addAttribute("s_dormitoryid",s_dormitoryid);
+	  model.addAttribute("d_dormbuilding",d_dormbuilding);
+	  model.addAttribute("a_name",a_name);
 		return "dormitory_list";
 	}
 
@@ -95,6 +98,7 @@ public class DormitoryController {
     public String findDormitoryStudent(Integer s_dormitoryid, Model model) {
         List<Dormitory> d = dormitoryService.findDormitoryStudent(s_dormitoryid);
 		model.addAttribute("ds",d);
+		model.addAttribute("s_dormitoryid",s_dormitoryid);
 		return "dormitory_Studentlist";
 	}
 

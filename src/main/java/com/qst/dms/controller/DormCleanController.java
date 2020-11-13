@@ -40,6 +40,8 @@ public class DormCleanController {
         PageInfo<DormClean> di = dormCleanService.findPageInfo(d_id,d_dormbuilding,
                                             pageIndex,pageSize);
         model.addAttribute("di",di);
+        model.addAttribute("d_id",d_id);
+        model.addAttribute("d_dormbuilding",d_dormbuilding);
         return "dormclean_list";
     }
 

@@ -47,9 +47,9 @@
 <div class="x-body">
     <div class="layui-row">
         <form class="layui-form layui-col-md12 x-so" action="/findDormitory" >
-            <input class="layui-input" placeholder="请输入宿舍编号" name="s_dormitoryid" id="s_dormitoryid">
-            <input class="layui-input" placeholder="请输入宿舍楼" name="d_dormbuilding" id="d_dormbuilding">
-            <input class="layui-input" placeholder="请输入管理员姓名" name="a_name" id="a_name">
+            <input class="layui-input" placeholder="请输入宿舍编号" name="s_dormitoryid" id="s_dormitoryid" value="${s_dormitoryid}">
+            <input class="layui-input" placeholder="请输入宿舍楼" name="d_dormbuilding" id="d_dormbuilding" value="${d_dormbuilding}">
+            <input class="layui-input" placeholder="请输入管理员姓名" name="a_name" id="a_name" value="${a_name}">
 
             <input class="layui-input" type="hidden" name="pageIndex" value="1">
             <input class="layui-input" type="hidden" name="pageSize" value="3">
