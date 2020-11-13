@@ -47,8 +47,8 @@
     <div class="layui-row">
         <form class="layui-form layui-col-md12 x-so" action="/findAdmin" >
             <input type="hidden" class="layui-input" placeholder="请输入用户名" name="a_id" id="a_id">
-            <input class="layui-input" placeholder="请输入用户名" name="a_username" id="a_username">
-            <input class="layui-input" placeholder="请输入级别描述" name="a_describe" id="a_describe" >
+            <input class="layui-input" placeholder="请输入用户名" name="a_username" id="a_username" value="${a_username}">
+            <input class="layui-input" placeholder="请输入级别描述" name="a_describe" id="a_describe" value="${a_describe}">
 
             <input class="layui-input" type="hidden" name="pageIndex" value="1">
             <input class="layui-input" type="hidden" name="pageSize" value="3">

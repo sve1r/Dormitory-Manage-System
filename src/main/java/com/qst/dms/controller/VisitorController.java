@@ -38,6 +38,7 @@ public class VisitorController {
                                                 pageIndex,pageSize);
         model.addAttribute("pi",pi);
         model.addAttribute("v_name",v_name);
+        model.addAttribute("v_phone",v_phone);
         return "visitor_list";
     }
 

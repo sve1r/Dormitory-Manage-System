@@ -41,15 +41,14 @@
         <a href="">首页</a>
         <a href="/findVisitor">访客信息</a>
       </span>
-    <a class="layui-btn layui-btn-small" style="line-height:1.6em;margin-top:3px;float:right" href="/findVisitor" title="刷新">
+        <a class="layui-btn layui-btn-small" style="line-height:1.6em;margin-top:3px;float:right" href="/findVisitor" title="刷新">
         <i class="layui-icon" style="line-height:30px">ဂ</i></a>
 </div>
 <div class="x-body">
     <div class="layui-row">
         <form class="layui-form layui-col-md12 x-so" action="/findVisitor" >
-            <input class="layui-input" placeholder="请输入姓名" name="v_name" id="v_name">
-            <input class="layui-input" placeholder="请输入电话" name="v_phone" id="v_phone">
-
+            <input class="layui-input" placeholder="请输入姓名" name="v_name" id="v_name" value="${v_name}">
+            <input class="layui-input" placeholder="请输入电话" name="v_phone" id="v_phone" value="${v_phone}">
             <input class="layui-input" type="hidden" name="pageIndex" value="1">
             <input class="layui-input" type="hidden" name="pageSize" value="3">
             <button class="layui-btn"  lay-submit="" lay-filter="search"><i class="layui-icon">&#xe615;</i></button>
@@ -135,14 +134,14 @@
         </tbody>
     </table>
 
-    <div class="" >
+
         <input type="hidden" id="totalPageCount" value="${pi.pageTotalCount}"/>
         <c:import url="pageBtn.jsp">
             <c:param name="totalCount" value="${pi.totalCount}"/>
             <c:param name="currentPageNo" value="${pi.pageIndex}"/>
             <c:param name="totalPageCount" value="${pi.pageTotalCount}"/>
         </c:import>
-    </div>
+
 </div>
 <script>
 

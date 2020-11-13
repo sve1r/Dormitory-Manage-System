@@ -86,6 +86,8 @@ public class AdminController {
         PageInfo<Admin> ai = adminService.findPageInfo(a_username, a_describe,
                 a_id, pageIndex, pageSize);
         model.addAttribute("ai", ai);
+        model.addAttribute("a_username",a_username);
+        model.addAttribute("a_describe",a_describe);
         return "admin_list";
     }
 
