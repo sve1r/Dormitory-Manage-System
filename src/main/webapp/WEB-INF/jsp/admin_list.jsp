@@ -87,10 +87,14 @@
             <%--<td>${class.c_id}</td>--%>
             <td class="myid">${ai.a_id}</td>
             <td>${ai.a_username}</td>
-            <%--<td>${ai.a_password}</td>--%>
+<%--
+            <td>${ai.a_password}</td>
+--%>
             <td>${ai.a_name}</td>
             <td>${ai.a_phone}</td>
-            <%--<td>${ai.a_power}</td>--%>
+<%--
+            <td>${ai.a_power}</td>
+--%>
             <td>${ai.a_describe}</td>
             <td class="td-manage">
                 <%--href="/findAdminById?a_id=${ai.a_id}"--%>
@@ -262,9 +266,8 @@
                     url: '/addAdmin',
                     type: "POST",
                     data:JSON.stringify(param),
-                    //contentType: "application/json; charset=utf-8",
-                    success:function(da){
-                        console.log(da);
+                    contentType: "application/json; charset=utf-8",
+                    success:function(){
                         layer.msg('添加成功', {icon: 1, time: 2000});
                         setTimeout(function () {window.location.href='/findAdmin';},2000);
 
