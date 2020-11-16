@@ -17,8 +17,8 @@ import java.util.List;
 /**
  * @program: dormitorySystem
  * @description: 宿舍卫生控制器
- * @author: Joyrocky
- * @create: 2019-04-24 11:19
+ * @author:
+ * @create:
  **/
 
 @Controller

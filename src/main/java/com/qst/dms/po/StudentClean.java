@@ -1,17 +1,15 @@
 package com.qst.dms.po;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+
 
 import java.util.Date;
 
 /**
  * @program: dormitorySystem
  * @description: 学生卫生
- * @author: Joyrocky
- * @create: 2019-04-25 12:12
+ * @author:
+ * @create:
  **/
 
 

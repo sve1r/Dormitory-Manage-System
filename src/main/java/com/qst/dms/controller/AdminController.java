@@ -111,7 +111,6 @@ public class AdminController {
     @RequestMapping(value = "/addAdmin", method = RequestMethod.POST)
     @ResponseBody
     public String addAdmin(@RequestBody Admin admin) {
-
         admin.setA_password(MD5Util.MD5EncodeUtf8(admin.getA_password()));
         int a = adminService.addAdmin(admin);
         return "admin_list";

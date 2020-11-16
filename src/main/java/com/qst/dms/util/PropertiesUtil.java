@@ -3,8 +3,8 @@ package com.qst.dms.util;
 /**
  * @program: dormitorySystem
  * @description: 属性工具
- * @author: Joyrocky
- * @create: 2019-04-28 23:10
+ * @author:
+ * @create:
  **/
 
 import org.apache.commons.lang3.StringUtils;

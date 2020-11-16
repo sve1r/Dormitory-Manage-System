@@ -96,9 +96,6 @@
         </div>
     </div>
 
-
-
-
     <%--表格数据--%>
     <table class="layui-table">
         <thead>

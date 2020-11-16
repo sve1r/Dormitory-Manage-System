@@ -18,8 +18,8 @@ import java.util.List;
 /**
  * @program: dormitorySystem
  * @description: 维修登记
- * @author: Joyrocky
- * @create: 2019-04-27 17:13
+ * @author:
+ * @create:
  **/
 @Controller
 public class DormRepairController {

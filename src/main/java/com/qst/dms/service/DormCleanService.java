@@ -10,8 +10,8 @@ import java.util.List;
 /**
  * @program: dormitorySystem
  * @description: 宿舍卫生服务接口
- * @author: Joyrocky
- * @create: 2019-04-24 15:18
+ * @author:
+ * @create:
  **/
 public interface DormCleanService {
     //分页查询

@@ -15,8 +15,8 @@ import java.util.List;
  * Class AdminServiceImpl
  *
  * @author sve1r
- * @description 用户Service接口实现类
- * @date 2020/11/11
+ * @description
+ * @date
  */
 @Service("adminService")
 @Transactional

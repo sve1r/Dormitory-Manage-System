@@ -9,8 +9,8 @@ import java.util.List;
 /**
  * @program: dormitorySystem
  * @description: 宿舍卫生
- * @author: Joyrocky
- * @create: 2019-04-24 14:37
+ * @author:
+ * @create:
  **/
 public interface DormCleanDao {
     /**

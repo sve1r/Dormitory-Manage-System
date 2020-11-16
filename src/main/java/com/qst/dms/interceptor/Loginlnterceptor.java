@@ -13,8 +13,8 @@ import javax.servlet.http.HttpSession;
  * Class Loginlnterceptor
  *
  * @author sve1r
- * @description 登录拦截器
- * @date 2020/11/11
+ * @description
+ * @date
  */
 public class Loginlnterceptor implements HandlerInterceptor {
     @Override
