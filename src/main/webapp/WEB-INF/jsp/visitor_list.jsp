@@ -1,8 +1,8 @@
 <%--
   Created by IntelliJ IDEA.
-  User: 周训凯
-  Date: 2019/5/14
-  Time: 0:04
+  User:
+  Date:
+  Time:
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" import="com.qst.dms.po.Visitor" %>
